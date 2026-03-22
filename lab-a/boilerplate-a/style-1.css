@@ -1,3 +1,132 @@
-body {
-  background-color: black;
+@font-face {
+  font-family: mrsaturn; /* set name */
+  src: url(assets/SenorSaturno-Aw9g.ttf); /* url of the font */
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: linear-gradient(deepskyblue,dodgerblue,cornflowerblue ,cadetblue, aquamarine);
+  font-family:mrsaturn;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+header{
+  text-align: center;
+  border: 5px ridge blueviolet;
+  border-radius: 100%
+}
+h1{
+  font-size: 8em;
+text-transform: capitalize;
+  text-shadow: 5px 5px red;
+
+}
+h2{
+font-size: 3em;
+  text-transform: capitalize;
+}
+h3{
+  font-size: 2em;
+  text-transform: capitalize;
+}
+main{
+  width: 79%;
+}
+.sidebar{
+  float: right;
+  width: 20%;
+  position: relative;
+  border: 0 ;
+  margin-top: 200px;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+
+
+img {
+  border: 5px ridge crimson;
+  border-top-left-radius: 100% ;
+border-top-right-radius:100% ;
+padding: 3px;
+}
+
+img:hover {
+    box-shadow: 10px 10px #666666;
+  }
+
+ol{
+  list-style-type: hiragana;
+  list-style-position: outside;
+}
+li{
+  border: mediumvioletred ridge 1px;
+}
+p{
+  font-size: 1rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px greenyellow;
+}
+div{
+  border-top:5px ridge black;
+  border-bottom: 5px ridge black ;
+  border-right:5px ridge black ;
+}
+footer{
+  display: block;
+  position: absolute;
+  text-decoration-line: underline;
+  text-align: justify;
+  background-color: salmon;
+  width: 100%;
+
+  border:5px ridge black;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  header{
+    text-align: center;
+    border: 5px ridge blueviolet;
+    border-radius: 25%
+  }
+  h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-shadow: 5px 5px red;
+
+  }
+  h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+  img {
+    border: 5px ridge crimson;
+    border-top-left-radius: 100% ;
+    border-top-right-radius:100% ;
+    padding: 3px;
+    max-width: 80%;
+  }
+  main{;
+    width: 100%;
+  }
+}
+
+

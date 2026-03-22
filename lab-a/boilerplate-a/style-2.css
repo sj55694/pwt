@@ -1,3 +1,199 @@
-body {
-  background-color: grey;
+html, body {
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: Verdana, sans-serif;
+
 }
+
+body {
+  background: linear-gradient(wheat, grey 50%, wheat);
+}
+
+h1 {
+
+  font-size: 3em;
+  white-space: normal;
+
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding-top: 3%;
+  height: 100vh;
+  width: 10%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  flex-shrink: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: normal;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+}
+
+.sidebar:hover {
+  box-shadow: 0px 0px #444444;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+
+  margin: 0;
+  border: blueviolet 10px dotted;
+
+}
+h1{
+  font-style: italic;
+  text-shadow: 3px 3px 3px darkblue;
+}
+.sidebar h2 {
+  padding-left: 10px;
+}
+
+h2 {
+
+  text-align: center;
+}
+
+ol {
+  list-style-type: upper-roman;
+  list-style-position: outside;
+
+}
+
+li {
+  border: mediumvioletred ridge 2px;
+
+}
+
+div {
+
+  width: 20%;
+  margin: 15px;
+  display: block;
+  padding-left: 5px;
+  padding-right: 10px;
+  border: mediumvioletred ridge 1px;
+  float: right;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+div:hover{
+  box-shadow: -5px 10px #444444;
+}
+
+h3 {
+  float: left;
+
+}
+
+main {
+  height: max-content;
+  border: 10px green groove;
+  margin-bottom: 60px;
+}
+
+img {
+  border: 5px double black;
+  border-width: thick;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  margin: 10px;
+  width: 90%;
+
+}
+li:hover{
+  text-shadow: -1px 1px #444444;
+}
+
+footer {
+
+  display: block;
+  text-decoration-line: overline underline;
+  text-align: center;
+  background: radial-gradient(hotpink,deeppink,pink );
+  width: 99%;
+  border: 5px ridge black;
+  position: fixed;
+  bottom: 0;
+
+}
+
+p{
+  text-shadow: 2px 2px 4px white;
+}
+p:hover{
+ background-color: white;
+}
+
+
+@media (max-width: 600px) {
+  header {
+    padding-top: 1%;
+  }
+
+  .sidebar {
+    border-width: 5px;
+  }
+
+  h1 {
+    margin: 5px 0;
+  }
+
+  main {
+    margin-bottom: 70px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    writing-mode: horizontal-tb;
+    padding: 10px;
+    position: relative;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar h2 {
+    writing-mode: horizontal-tb;
+  }
+  div {
+
+    width: 80%;
+    margin: 15px;
+    display: block;
+    padding-right: 10px;
+    border: mediumvioletred ridge 1px;
+    float: right;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+}
+
+
