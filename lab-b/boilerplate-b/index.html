@@ -1,14 +1,33 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - PTW LAB B</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jakub Sibora 55694 - PTW LAB B</title>
 
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <script src="scripts.js" defer></script>
-</head>
-<body>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+       <script src="scripts.js" defer></script>
+    </head>
+    <body>
 
-</body>
+
+        <h1>Lista TODO</h1>
+
+        <div>
+            <input type="text" id="searchInput" placeholder="Szukaj (min. 2 znaki)">
+        </div>
+
+
+        <div>
+            <input type="text" id="newTaskText" placeholder="Nowe zadanie (3-255 znaków)">
+            <input type="datetime-local" id="newTaskDeadline">
+            <button id="addButton">Dodaj</button>
+        </div>
+
+
+        <ul id="todoList" class="todo-list">
+
+        </ul>
+
+    </body>
 </html>
