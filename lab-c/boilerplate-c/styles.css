@@ -1,0 +1,62 @@
+body {
+  background-color: #e6f1fc;
+}
+
+#map {
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#rasterMap {
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.puzzle_start {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(4, 37.5px);
+    gap: 2px;
+    margin-top: 20px;
+}
+
+.puzzle_piece {
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: move;
+}
+
+.puzzle_piece:hover {
+    background-color: #e0e0e0;
+}
+
+.puzzle_stop {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(4, 37.5px);
+    gap: 2px;
+    margin-top: 20px;
+    border: 2px dashed #999;
+    padding: 10px;
+    background-color: #f9f9f9;
+    min-height: 160px;
+}
+
+.puzzle_stop.drag-over {
+    background-color: #e8f4f8;
+    border-color: #0066cc;
+}
+
+.puzzle_stop.completed {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-color: black;
+}
+
