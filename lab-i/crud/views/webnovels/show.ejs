@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/assets/src/vendor/reset.css' />
+    <link rel='stylesheet' href='/assets/dist/style.min.css' />
+  </head>
+  <body>
+    <main>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/webnovels">Webnovels</a></li>
+      </ul>
+    </nav>
+
+    <h1><%= webnovel.Tytul %></h1>
+    <p><strong>Author:</strong> <%= webnovel.Autor %></p>
+    <p><strong>Description:</strong></p>
+    <p><%= webnovel.Opis.replace(/\n/g, '<br>') %></p>
+
+    <ul class="action-list">
+      <li><a href="/webnovels/<%= webnovel.id %>/edit">Edit</a></li>
+      <li><a href="/webnovels/<%= webnovel.id %>/delete">Delete</a></li>
+      <li><a href="/webnovels">Back to list</a></li>
+    </ul>
+    </main>
+  </body>
+</html>
