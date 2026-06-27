@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Webnovels{% endblock %}
+
+{% block body %}
+    <h1>Create new Webnovels</h1>
+
+    {{ include('webnovels/_form.html.twig') }}
+
+    <a href="{{ path('app_webnovels_index') }}">back to list</a>
+{% endblock %}
