@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Webnovels List</h1>
+  <a href="{{ url_for('webnovels_create') }}">Create new</a>
+  <ul class="index-list">
+    {% for item in webnovels %}
+      <li>
+        <h3>{{ item['Tytul'] }}</h3>
+        <p><strong>Author:</strong> {{ item['Autor'] }}</p>
+        <ul class="action-list">
+          <li><a href="{{ url_for('webnovels_show', item_id=item['id']) }}">Details</a></li>
+          <li><a href="{{ url_for('webnovels_edit', item_id=item['id']) }}">Edit</a></li>
+          <li><a href="{{ url_for('webnovels_delete', item_id=item['id']) }}">Delete</a></li>
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>{{ webnovel['Tytul'] }}</h1>
+  <p><strong>Author:</strong> {{ webnovel['Autor'] }}</p>
+  <p><strong>Description:</strong></p>
+  <p>{{ webnovel['Opis']|replace('\n', '<br>')|safe }}</p>
+
+  <ul class="action-list">
+    <li><a href="{{ url_for('webnovels_edit', item_id=webnovel['id']) }}">Edit</a></li>
+    <li><a href="{{ url_for('webnovels_delete', item_id=webnovel['id']) }}">Delete</a></li>
+    <li><a href="{{ url_for('webnovels_index') }}">Back to list</a></li>
+  </ul>
+{% endblock %}

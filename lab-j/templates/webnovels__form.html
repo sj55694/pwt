@@ -1,0 +1,15 @@
+<form method="post" action="{{ request.path }}">
+  <div>
+    <label for="Tytul">Title:</label>
+    <input type="text" id="Tytul" name="Tytul" value="{{ webnovel['Tytul'] if webnovel else '' }}">
+  </div>
+  <div>
+    <label for="Autor">Author:</label>
+    <input type="text" id="Autor" name="Autor" value="{{ webnovel['Autor'] if webnovel else '' }}">
+  </div>
+  <div>
+    <label for="Opis">Description:</label>
+    <textarea id="Opis" name="Opis">{{ webnovel['Opis'] if webnovel else '' }}</textarea>
+  </div>
+  <button type="submit">Save</button>
+</form>

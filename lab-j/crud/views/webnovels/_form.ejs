@@ -1,0 +1,15 @@
+<form method="post" action="<%= action %>">
+  <div>
+    <label for="Tytul">Title:</label>
+    <input type="text" id="Tytul" name="Tytul" value="<%= webnovel.Tytul || '' %>">
+  </div>
+  <div>
+    <label for="Autor">Author:</label>
+    <input type="text" id="Autor" name="Autor" value="<%= webnovel.Autor || '' %>">
+  </div>
+  <div>
+    <label for="Opis">Description:</label>
+    <textarea id="Opis" name="Opis"><%= webnovel.Opis || '' %></textarea>
+  </div>
+  <button type="submit">Save</button>
+</form>
