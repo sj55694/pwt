@@ -1,0 +1,151 @@
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+#weather-search-params {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#locationInput {
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+#checkButton {
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+#checkButton:hover {
+  background-color: lightgreen;
+
+}
+
+#weather_results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 20px;
+}
+
+.weather_block {
+  background-color: white;
+  border-radius: 10%;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  height: 320px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.weather_block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0);
+}
+
+.weather-date {
+  font-size: 13px;
+  color: darkgrey;
+
+
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15 px;
+}
+
+.weather-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.weather-temperature {
+  font-size: 36px;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.weather-temperature-feels-like {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.weather-description {
+  font-size: 16px;
+  color: #333;
+ text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+
+  }
+
+  #locationInput {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #weather-search-params {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #checkButton {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
